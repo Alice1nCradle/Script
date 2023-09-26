@@ -1,14 +1,15 @@
 import gmpy2 as gp
 import binascii
 e = 17
-p = 473398607161
-q = 4511491
-# c = 69380371057914246192606760686152233225659503366319332065009
+p = 447685307
+q = 2037
+c = 704796792
 n = p*q
 phi = (p-1) * (q-1)
 d = gp.invert(e, phi)
-# m = pow(c, d, n)
-# print(binascii.unhexlify(hex(m)[2:]))
+m = pow(c, d, n)
+print(m)
+print(binascii.unhexlify(hex(m)[2:]))
 print(d)
 d_hex = hex(d)
 print(d_hex)
