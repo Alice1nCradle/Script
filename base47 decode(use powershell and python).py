@@ -1,0 +1,1 @@
+(lambda a, b: __import__('libnum').n2s(sum([b.index(a[i]) * (len(b) ** (len(a) - i - 1)) for i in range(len(a))])))('E9CV^T+HT5#X36RF4@LAU703+F$E-0N$@68LMXCVDRJJD5@MP#7MUZDTE?WWLG1S#L@+^66H@59KTWYK8TW0RV', '0123456789ABCDEFGHJKLMNPQRSTUVWXYZ?!@#$%^&*-+')
